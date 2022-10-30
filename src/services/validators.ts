@@ -1,10 +1,4 @@
-import React from "react";
-
 export const fetchValidators = async () => {
-    // const validators = await fetch("https://elanodes.com/api/node-metrics")
-    // const result = await validators.json();
-    // return result.result
-
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -3,19 +3,14 @@ import {
   ChakraProvider,
   Box,
   Text,
-  Link,
   VStack,
-  Code,
   Grid,
   theme,
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import { Logo } from "./Logo";
 import ValidatorList from "./components/Validators";
 
 export const App = () => {
-  // const validators = fetchValidators();
-
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
@@ -24,19 +19,7 @@ export const App = () => {
           <VStack spacing={8}>
             <Text fontSize="2xl">Elastos DPoS 2.0 Validators (Testnet)</Text>
             <ValidatorList />
-            {/* <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link> */}
+            {/* <Logo h="40vmin" pointerEvents="none" /> */}
           </VStack>
         </Grid>
       </Box>
